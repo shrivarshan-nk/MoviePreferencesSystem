@@ -21,7 +21,7 @@ public class Movie extends javax.swing.JFrame {
     public Movie(String user) throws Exception {
         initComponents();
         username=user;
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
         
         try{
