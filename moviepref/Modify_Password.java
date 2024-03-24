@@ -21,7 +21,7 @@ public class Modify_Password extends javax.swing.JFrame {
     public Modify_Password(String user) throws Exception {
         username=user;
         initComponents();
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
     }
 
