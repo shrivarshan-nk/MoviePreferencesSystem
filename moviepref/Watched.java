@@ -25,7 +25,7 @@ public class Watched extends javax.swing.JFrame {
     public Watched(String user) throws Exception {
         initComponents();
         username=user;
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
         
         try{
