@@ -17,7 +17,7 @@ public class Login extends javax.swing.JFrame {
     public Connection con;
     public Login() throws Exception {
         initComponents();
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
     }
 
