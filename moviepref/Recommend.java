@@ -24,7 +24,7 @@ public class Recommend extends javax.swing.JFrame {
     public Recommend(String username) throws Exception {
         initComponents();
         user=username;
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
         ResultSet rs=stmt.executeQuery("select MovieName,OTT,IMDB from "+user+"movies where status='Not Watched'");  
         while(rs.next()){ 
