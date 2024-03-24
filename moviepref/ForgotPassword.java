@@ -15,7 +15,7 @@ public class ForgotPassword extends javax.swing.JFrame {
     public Connection con;
     public ForgotPassword() throws Exception {
         initComponents();
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
     }
     /**
