@@ -15,7 +15,7 @@ public class Suggest extends javax.swing.JFrame {
     String user;
     public Suggest(String username) throws Exception{
         initComponents();
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
         user=username;
     }
