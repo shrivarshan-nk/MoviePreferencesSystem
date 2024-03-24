@@ -14,7 +14,7 @@ public class SignUp extends javax.swing.JFrame {
     public Connection con;
     String user;
     public SignUp() throws Exception {
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
         initComponents();
     }
