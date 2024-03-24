@@ -27,7 +27,7 @@ public class WatchedList extends javax.swing.JFrame {
         initComponents();
         user=Username;
         
-        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","vijikabi123");  
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/moviepreference","root","password");  
         stmt=con.createStatement();
         ResultSet rs=stmt.executeQuery("select MovieName,Year,UserRating,Status from "+user+"movies");  
         while(rs.next()){ 
